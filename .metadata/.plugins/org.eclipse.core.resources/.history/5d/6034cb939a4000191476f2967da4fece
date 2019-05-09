@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class CuiApplication {
+	public static void main(String[] args){
+		Scanner scanner =new Scanner(System.in);
+		String userName = "Admin";
+		String passwordMain = "Admin";
+		int count = 0;
+		System.out.println("Enter your user-id");
+		String userId = scanner.nextLine();
+		System.out.println("Enter your password");
+		String password = scanner.nextLine();
+//		scanner.close();
+//		if(userName.equals(userId) && passwordMain.equals(password)){
+//			System.out.println("Welcome " + userName);
+//		}
+//		else{
+//			System.out.println("Wrong username and password Please try again");
+//			count++;
+//			if(count < 3){
+//				System.out.println("Contact Admin");
+//			}
+		do{
+			if(userName.equals(userId) && passwordMain.equals(password)){
+				System.out.println("Welcome " + userName);
+			}else{		
+			System.out.println("Wrong username and password Please try again");
+			count++;
+			}
+		}while(count < 3);
+	}
+}

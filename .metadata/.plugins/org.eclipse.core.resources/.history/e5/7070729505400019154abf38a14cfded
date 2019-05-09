@@ -1,0 +1,61 @@
+
+public class ArmstrongOfMultipleNum {
+
+	public static void main(String[] args) {
+		int start= 100;
+		int end = 999;
+		
+		for(int number=start;number<end;number++) {
+			int sum = 0;
+			int count =0;
+			int checknumber = number;
+			while(checknumber != 0) {
+				number /= 10;
+				count++;
+			}
+			checknumber=number;
+			while(number != 0) {
+				int temp = (number % 10);
+				sum += Math.pow(temp, count);
+				number = (number / 10);
+			}
+			
+			if(checknumber == sum) {
+			System.out.println(checknumber+" ");
+			}
+		
+	}
+}
+}
+
+//public class ArmstrongOfMultipleNum {
+//
+//    public static void main(String[] args) {
+//
+//        int low = 999, high = 99999;
+//
+//        for(int number = low; number < high; ++number) {
+//            int digits = 0;
+//            int result = 0;
+//            int originalNumber = number;
+//
+//            // number of digits calculation
+//            while (originalNumber != 0) {
+//                originalNumber /= 10;
+//                ++digits;
+//            }
+//
+//            originalNumber = number;
+//
+//            // result contains sum of nth power of its digits
+//            while (originalNumber != 0) {
+//                int remainder = originalNumber % 10;
+//                result += Math.pow(remainder, digits);
+//                originalNumber /= 10;
+//            }
+//
+//            if (result == number)
+//                System.out.print(number + " ");
+//        }
+//    }
+//}

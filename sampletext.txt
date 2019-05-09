@@ -1,0 +1,2 @@
+I know we are deleting the file, but we still run git add because we need to tell Git about the change we are making. git add can 
+be used when we are adding a new file to Git, modifying contents of an existing file and adding it to Git, or deleting a file from a Git repo. 

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		
+		int number1 = scn.nextInt();
+		System.out.println("Enter the number");
+		int sum = 0;
+		int checknumber = number1;
+		while(number1 > 0) {
+			number1 = (number1 % 10);
+			sum += Math.pow(number1, 3);
+			number1 = (number1 / 10);
+		}
+		if(checknumber == sum) {
+			System.out.println("Number is armstrong");
+		}
+		else {
+			System.out.println("Number is not armstrong");
+		}
+	}
+}

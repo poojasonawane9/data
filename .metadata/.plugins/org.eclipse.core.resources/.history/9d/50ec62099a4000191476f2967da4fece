@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class CuiApplication {
+	public static void main(String[] args){
+		Scanner scanner =new Scanner(System.in);
+		String userName = "Admin";
+		String passwordMain = "Admin";
+		System.out.println("Enter your user-id");
+		String userId = scanner.nextLine();
+		System.out.println("Enter your password");
+		String password = scanner.nextLine();
+//		scanner.close();
+		if(userName.equals(userId) && passwordMain.equals(password)){
+			System.out.println("Welcome " + userName);
+		}
+	}
+}

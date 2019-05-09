@@ -1,0 +1,23 @@
+
+public class ArmstrongOfMultipleNum {
+
+	public static void main(String[] args) {
+		int end = 999;
+		int sum = 0;
+		int temp;
+		
+		for(int start=100;start<end;start++) {
+			
+			while(start)
+			int checknumber = start;
+			temp = (start % 10);
+			sum += Math.pow(temp, 3);
+			start = (start / 10);
+			
+			if(checknumber == sum) {
+				System.out.println(start);
+			}
+			
+		}
+	}
+}

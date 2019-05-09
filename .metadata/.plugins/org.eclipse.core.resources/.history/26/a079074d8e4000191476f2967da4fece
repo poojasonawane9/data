@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class SimpleAndCompound {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter principle value");
+		float principle = scn.nextInt();
+		System.out.println("Enter period");
+		int period=scn.nextInt();
+		System.out.println("Enter rate of interest");
+		float rate=scn.nextInt();
+		float simpleInterest=(principle*period*rate)/100;
+		System.out.println("Simple Interest is= "+simpleInterest);
+		float data = (1+ rate/100);
+		float compoundInterest = (float)(principle * Math.pow(data, period));
+		System.out.println("Simple interest is =" + compoundInterest);
+	}
+}

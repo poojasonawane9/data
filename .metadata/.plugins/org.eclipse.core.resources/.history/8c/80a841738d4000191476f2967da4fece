@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class SearchElement {
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Eneter number of elements in array");
+		int totalElement = scanner.nextInt();
+		int array[] = new int[totalElement];
+		System.out.println("Enter elments");
+		for(int element = 0;element < totalElement;element++){
+			array[element] = scanner.nextInt();
+		}
+		System.out.println("Eneter the element to be search");
+		int searchElement = scanner.nextInt();
+		
+	}
+}

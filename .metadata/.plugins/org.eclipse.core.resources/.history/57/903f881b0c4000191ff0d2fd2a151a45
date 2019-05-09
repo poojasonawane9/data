@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class SimpleAndCompound {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter principle value");
+		int principle = scn.nextInt();
+	}
+}

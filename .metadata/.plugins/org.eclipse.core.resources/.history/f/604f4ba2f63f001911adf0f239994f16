@@ -1,0 +1,19 @@
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		int number1 = 153;
+		int number2 = 0;
+		int checknumber = number1;
+		while(number1 > 0) {
+			number2 = number2 + (number1 % 10) * (number1 * 10) * (number1 * 10);
+			number1 = (number1 / 10);
+		}
+		if(checknumber == number2) {
+			System.out.println("Number is armstrong");
+		}
+		else {
+			System.out.println("Number is not strong");
+		}
+	}
+}

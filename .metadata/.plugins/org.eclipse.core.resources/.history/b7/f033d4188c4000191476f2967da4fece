@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class SearchElement {
+	public static void main(String[] args){
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Eneter number of elements in array");
+		int totalElement = scn.nextInt();
+		int array[] = new int[totalElement];
+		System.out.println("Enter elments");
+		for(int element = 0;element < totalElement;element++){
+			array[element] = scn.nextInt();
+		}
+		System.out.println("Elements are ="+array);
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class BubbleSort {
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter how many elements you want");
+		int totalElements = scanner.nextInt();
+		int array[] = new int[totalElements];
+		System.out.println("Enter elements ");
+		for(int elements = 0;elements < totalElements;elements++){
+			array[elements]=scanner.nextInt();
+		}
+		System.out.println("Array before sorting");
+		for(int elements = 0;elements < totalElements;elements++){
+			System.out.println(array[elements]);
+		}
+	}
+}
